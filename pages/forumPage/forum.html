@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion Forum</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header" id="header">
+        <div class="logo"><h1>2kForAll</h1>
+            <h2>Food & Nutrition</h2></div>
+        <ul class="nav-links">
+            <li class="interactive-title">Macro Optimizer</li>
+            <li class="interactive-title">Quiz</li>
+            <li class="interactive-title">Items</li>
+            <li class="interactive-title">Forum</li>
+            <li class="interactive-title">Members</li>
+            <li class="interactive-title">Blog</li>
+            <li class="interactive-title">Log in</li>
+        </ul>
+    </div>
+    <br>
+    <div class="container">
+        <div class="main-content">
+            <div>
+                <span class="interactive-title">All Posts</span>
+                <span class="interactive-title">Categories</span>
+                <span class="interactive-title">My Posts</span>
+            </div>
+            <input type="text" class="search-bar" placeholder="Search...">
+        </div>
+
+    <!-- Main Content Container -->
+    <div class="container">
+        <!-- Forum Block -->
+        <div class="forum-block">
+            <h1><bold>Forum</bold></h1>
+            <p>Welcome! Have a look around and join the discussions.</p>
+        </div>
+
+        <!-- Main Content Section -->
+        <div class="main-content2">
+            <!-- Sort By Dropdown -->
+            <div class="sort-by">
+                <select>
+                    <option value="recent">Sort By: Recent</option>
+                    <option value="popular">Sort By: Popular</option>
+                    <option value="active">Sort By: Active</option>
+                </select>
+            </div>
+            <!-- Create New Post Button -->
+            <button class="create-post-button">Create New Post</button>
+        </div>
+
+        <!-- Post Block -->
+        <div class="post-block">
+            <!-- User Info -->
+            <div class="user-info">
+                <div>
+                    <p>Hi, User! Welcome to the Forum</p>
+                    <p>Share your thoughts. Feel free to add GIFs, videos, hashtags and more to your posts and comments. Get started by commenting below. We'd love to get to know you better. Take a moment to say hi to the community in the comments.</p>
+                    <p><strong>Forum rules:</strong></p>
+                    <ul>
+                        <li>Respect each other</li>
+                        <li>Keep posts relevant to the forum topic</li>
+                        <li>No spamming</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End of User Info -->
+        </div>
+        <!-- End of Post Block -->
+        <div id="posts-container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

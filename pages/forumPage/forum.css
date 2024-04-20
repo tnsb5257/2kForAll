@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    align-items: center;
+    background-color: #ccca9a;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+.logo {
+    text-align: left;
+    margin-left: 15px;
+}
+.logo h1 {
+    font-size: 24px;
+    color: #028566;
+    padding: 0px;
+    margin: 0px;
+}
+.logo h2 {
+    font-size: 16px;
+    color: #028566;
+    padding: 0px;
+    margin: 0px;
+}
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    margin-right: 20px;
+}
+.nav-links li {
+    margin-right: 20px;
+}
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+.main-content {
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    font-style: #fafafa;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.main-content2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.interactive-title {
+    cursor: pointer;
+    margin-right: 20px;
+    font-weight: bold;
+    color: rgb(0, 0, 0); 
+    transition: 0.3s;
+}
+.interactive-title:hover{
+    color: #028566;
+    font-size: large; 
+    
+}
+.search-bar {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+.forum-block {
+    background-image: url('https://images.unsplash.com/photo-1606787366850-de6330128bfc?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    padding: 50px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.sort-by {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.sort-by select {
+    margin-right: 10px;
+}
+.create-post-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.create-post-button:hover {
+    font-size: large;
+}
+.post-block {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.user-info {
+    
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.post-content {
+    margin-bottom: 20px;
+}
+.post {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding-left: 50px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.user-profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.username {
+    font-weight: bold;
+}
+.post-image {
+    align-self: center;
+    max-width: 400px;
+    margin-bottom: 10px;
+}
+.post-content {
+    margin-bottom: 10px;
+}
+.post-actions {
+    display: inline-block;
+    vertical-align: top; /* Align buttons to the top */
+    margin-right: 10px; /* Optional: Add some space between buttons */
+}
+.like-button,
+.comment-button {
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px; }
+/* Additional styling for button images */
+.like-button img,
+.comment-button img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px; /* Optional: Add margin between image and text */
+}
+.likes {
+    font-weight: bold;
+    margin-right: 10px;
+}
+.comments {
+    color: #999;
+}
+.comment {
+    margin-top: 5px;
+}
