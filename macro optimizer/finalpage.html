@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Calendar and Table</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url("https://images.unsplash.com/photo-1600891964599-f61ba0e24092?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .wrapper {
+            display: flex;
+            width: 80%;
+        }
+
+        #left {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        #right {
+            flex: 1;
+            padding-left: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #028566;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+<div class="wrapper">
+    <div id="left">
+        <!-- Paste your calendar HTML code here -->
+        <h1>Dynamic Calendar</h1>
+        <div id="event-section">
+            <h3>Add Event</h3>
+            <input type="date" id="eventDate">
+            <input type="text"
+                   id="eventTitle"
+                   placeholder="Event Title">
+            <input type="text"
+                   id="eventDescription"
+                   placeholder="Event Description">
+            <button id="addEvent" onclick="addEvent()">
+                Add
+            </button>
+        </div>
+        <div id="reminder-section">
+            <h3>Reminders</h3>
+            <!-- List to display reminders -->
+            <ul id="reminderList">
+                <li data-event-id="1">
+                    <strong>Event Title</strong>
+                    - Event Description on Event Date
+                    <button class="delete-event"
+                            onclick="deleteEvent(1)">
+                        Delete
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="right">
+        <!-- Paste your table HTML code here -->
+        <div style="overflow-x: auto;">
+            <table id="myTable" class="table table-hover table-bordered table-striped">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Quantity(in gms)</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>chicken biryani</td>
+                    <td class="dropdown"><a class="btn btn-default typeButton"
+                                            data-toggle="dropdown" href="#"> select </a></td>
+                    <td>250</td>
+                    <td class="dropdown"><a class="btn btn-default actionButton"
+                                            data-toggle="dropdown" href="#"> ADD/Drop </a></td>
+                </tr>
+                <tr>
+                    <td>mutton fry</td>
+                    <td class="dropdown"><a class="btn btn-default typeButton"
+                                            data-toggle="dropdown" href="#"> select </a></td>
+                    <td>500</td>
+                    <td class="dropdown"><a class="btn btn-default actionButton"
+                                            data-toggle="dropdown" href="#"> ADD/Drop </a></td>
+                </tr>
+                <tr>
+                    <td>chole bature</td>
+                    <td class="dropdown"><a class="btn btn-default typeButton"
+                                            data-toggle="dropdown" href="#"> select </a></td>
+                    <td>130</td>
+                    <td class="dropdown"><a class="btn btn-default actionButton"
+                                            data-toggle="dropdown" href="#"> ADD/Drop </a></td>
+                </tr>
+                </tbody>
+            </table>
+            <ul id="contextMenu" class="dropdown-menu" role="menu">
+                <li><a href="test.html" class="link1">go to next</a></li>
+                <li><a href="test1.html" class="Link2">next</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
+

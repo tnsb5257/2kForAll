@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        th, td {
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even){background-color: #f2f2f2}
+        
+        th {
+          background-color: #028566;
+          color: white;
+        }
+        table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+
+        </style>
+    
+<script type='text/javascript'
+  src='http://code.jquery.com/jquery-2.0.2.js'></script>
+<link rel="stylesheet" type="text/css"
+  href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+<script type='text/javascript'
+  src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css"
+  href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
+
+  
+</head>
+<body>
+<div class="container">
+<div style="overflow-x: auto;">
+    <table id="myTable" class="table table-hover table-bordered table-striped">
+        <thead>
+          <tr>
+     
+            <th>Name</th>
+            <th>Type</th>
+            <th>Quantity(in gms)</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            
+            <td>chicken biryani</td>
+            <td class="dropdown"><a class="btn btn-default typeButton"
+                data-toggle="dropdown" href="#"> select </a></td>
+            
+            <td>250</td>
+            
+            <td class="dropdown"><a class="btn btn-default actionButton"
+              data-toggle="dropdown" href="#"> ADD/Drop </a></td>
+    
+            
+          </tr>
+
+          <tr>
+            
+            <td>mutton fry</td>
+            <td class="dropdown"><a class="btn btn-default typeButton"
+                data-toggle="dropdown" href="#"> select </a></td>
+            
+            <td>500</td>
+            
+            <td class="dropdown"><a class="btn btn-default actionButton"
+              data-toggle="dropdown" href="#"> ADD/Drop </a></td>
+    
+            
+          </tr>
+
+          <tr>
+            
+            <td>chole bature</td>
+            <td class="dropdown"><a class="btn btn-default typeButton"
+                data-toggle="dropdown" href="#"> select </a></td>
+            
+            <td>130</td>
+            
+            <td class="dropdown"><a class="btn btn-default actionButton"
+              data-toggle="dropdown" href="#"> ADD/Drop </a></td>
+    
+            
+          </tr>
+         
+        </tbody>
+      </table>
+      <ul id="contextMenu" class="dropdown-menu" role="menu">
+        <li><a  href="test.html" class="link1">go to next</a></li>
+        <li><a href="test1.html" class="Link2">next</a></li>
+      </ul>
+</div>
+</div>
+ 
+ 
+</body>
+</html>
