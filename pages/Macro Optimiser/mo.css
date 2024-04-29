@@ -1,0 +1,194 @@
+body {
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    background-image: url("https://images.unsplash.com/photo-1600891964599-f61ba0e24092?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-repeat: repeat-y;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 250px; 
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+.logo {
+    text-align: left;
+    margin-left: 15px;
+}
+.logo h1 {
+    font-size: 24px;
+    color: #028566;
+    padding: 0px;
+    margin: 0px;
+}
+.logo h2 {
+    font-size: 16px;
+    color: #028566;
+    padding: 0px;
+    margin: 0px;
+}
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    margin-right: 20px;
+}
+.nav-links li {
+    margin-right: 20px;
+}
+.interactive-title {
+    cursor: pointer;
+    margin-right: 20px;
+    font-weight: bold;
+    color: rgb(0, 0, 0); 
+    transition: 0.3s;
+}
+.interactive-title:hover{
+    color: #028566;
+    font-size: large; 
+    
+}
+.wrapper1 {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 10px;
+}
+.wrapper2 {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 10px;
+}
+
+#left,
+#right {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #028566;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input[type="date"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#addEvent {
+    width: 100%;
+    padding: 10px;
+    background-color: #028566;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#addEvent:hover {
+    background-color: #026d5f;
+}
+
+#reminderList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#reminderList li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    position: relative;
+}
+
+#reminderList li button.delete-event {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    color: #cc0000;
+    cursor: pointer;
+}
+
+.button-container-calendar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #028566;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 5px 0;
+    border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #ddd;
+}
